@@ -15,7 +15,8 @@ pinMode(pin1، OUTPUT);
 pinMode(pin2، OUTPUT);
 pinMode(pin3، OUTPUT);
 }
-void loop() { int key = getIrKey();
+void loop() { 
+int key = getIrKey();
 if(key == 17843 ) {
 pin0state = !pin0state;
 if(pin0state == true) digitalWrite(pin0، HIGH);
